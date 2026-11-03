@@ -1,8 +1,25 @@
 # JX3CP P0 backlog / acceptance criteria
 
+## Current verification: 2026-11-02
+
+Goal status: **blocked, not complete** after the same app-control initialization failure recurred across three goal turns. No running JX3 client or new live logs were observed in the final check. Resume when app control recovers or actual client test results become available.
+
+- [ ] Official self-made addon testing/certification permission: researched, unconfirmed; user requested proceeding with ordinary checks.
+- [x] Actual flagship Interface: `E:\SeasunGame\Game\JX3\bin\zhcn_hd\interface`.
+- [x] Offline Lua syntax and mocked API tests: Lua 5.1 + 5.4, smoke and 13 regression cases per runtime.
+- [x] Probe `0.1.1-probe` staged disabled in its own new directory; source/destination SHA-256 match.
+- [ ] Plugin Manager discovers JX3CP_P0: no live observation.
+- [ ] Main.lua executes and produces visible game debug output: offline only.
+- [ ] JX3CP Debug Ping appears in game keybindings.
+- [ ] Real key press/release fires exactly one callback each: offline only.
+- [x] Local config version, addon version, hashes and offline results recorded.
+- [ ] Game-screen build, server/test environment, device and live test results recorded.
+
+Windows app control failed to start (`helper_unknown_error: setup refresh had errors`); no live client acceptance/rejection was observed. See [LOAD_TEST_REPORT.md](LOAD_TEST_REPORT.md), [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md), and [TEST_CASES.md](TEST_CASES.md). Historical checklist below remains open where it requires live evidence.
+
 ## Gate 0: permission and environment
 - [ ] Confirm current official plugin author registration / certification process and usable API whitelist
-- [ ] Confirm current client/build/region and installation path
+- [x] Record installed config version/region and actual path (game-screen build still pending)
 - [ ] Confirm approved test method for an unsigned new addon; stop if unsigned addons are blocked
 - [ ] Preserve a clean copy of game config and addon folder
 
@@ -27,7 +44,7 @@
 - [ ] Verify UI scaling + visibility without covering standard HUD
 
 ## P3: first UI prototype
-- [ ] 8 static slot display, configurable positions
+- [ ] 16 static slots (RT 8 + LT 8), configurable positions
 - [ ] 8+8 mapping crossbar and optional layer highlight
 - [ ] Display only; **never** fire skills from Lua addon
 - [ ] One radial menu demo with approved action; no automation

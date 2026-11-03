@@ -1,0 +1,35 @@
+{
+  "kind": "offline_only",
+  "live_client_verified": false,
+  "runtimes": [
+    {
+      "runtime": "Lua 5.1",
+      "syntax_files": 3,
+      "smoke": "passed",
+      "regression_cases": 13,
+      "result": "passed"
+    },
+    {
+      "runtime": "Lua 5.4",
+      "syntax_files": 3,
+      "smoke": "passed",
+      "regression_cases": 13,
+      "result": "passed"
+    }
+  ],
+  "lupa_version": "2.8",
+  "manifest": {
+    "version_field": "1.0",
+    "default": "0"
+  },
+  "plugin_version": "0.1.1-probe",
+  "sha256": {
+    "addon/JX3CP_P0/info.ini": "b13ed2110112015921fb3844b3d78fde4dd26de0e3742a19ae608982db81ce66",
+    "addon/JX3CP_P0/Main.lua": "0873b60194d46f9f88f35d13b4a232b6b685cf89e0efa7d4d5c51e5c24412fd9",
+    "tests/offline_regression.lua": "fa143d80794a0565b9661931c6fd685a7bc2cd8b5b97148fba134e2d91b75b89",
+    "tests/offline_smoke.lua": "e72d0508168dda35402bfdeab4aeb297c6ca4d15af9309560fd2a8ab9968c2f4",
+    "tests/run_offline.py": "1542a741ee889f8bb99249b889716c7fa0b33346694c8f6ac92555a162020fb4"
+  },
+  "tested_at": "2026-11-02T11:02:15.616886+08:00",
+  "result": "passed"
+}

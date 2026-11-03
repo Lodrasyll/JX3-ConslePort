@@ -1,0 +1,2 @@
+# Offline Lua runtimes only; never deployed into the game client.
+lupa==2.8

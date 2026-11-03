@@ -2,6 +2,16 @@
 
 Source code appearance != approved whitelist != accessible in current client != correct behavior.
 
+## Evidence update: 2026-11-02
+
+- Local `bin/zhcn_hd/interface` and installed MY manifests confirm the presence of `version=1.0` and `lua_0` fields. Discovery/execution of a new standalone addon remains unverified.
+- [MY System.Hotkey.lua](https://github.com/tinymins/JX3MY/blob/master/MY_%21Base/src/lib/System.Hotkey.lua) distinguishes framework wrapper `MY.RegisterHotKey` from global calls to `Hotkey.AddBinding(name, title, group, down, up)` and `Hotkey.Get`. This is source evidence, not current API permission.
+- [EasyTestAddon.lua](https://github.com/kiethen/EasyUI/blob/master/EasyTestAddon.lua) demonstrates `Output`, frame-bound `this:RegisterEvent`, and `OnFrameKeyDown`. It does not prove a global `RegisterEvent` is usable. Those forms must be verified separately.
+- `Log` is an unverified fallback in the probe, not a confirmed official logging API.
+- Stock Lua 5.1/5.4 mocks verify the probe's contract/error behavior only. All **current-client** statuses in the table below remain untested. Probe presence checks invoke no skill, storage, scale, or player API.
+- `call_ok_unverified` means only that registration did not throw or explicitly return false; manager visibility, permission and actual callbacks need separate live evidence.
+- Installed MY entry files are not plain text; no decompilation or claim about their runtime internals was made.
+
 | Candidate | Source evidence | Test | Expected result | Status |
 |---|---|---|---|---|
 | info.ini lua_0=Main.lua | JX3MY / MY_Target / info.ini | Plugin visible / entry log | Visible AND executed | Not tested in current client |

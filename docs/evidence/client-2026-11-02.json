@@ -1,0 +1,101 @@
+{
+  "inspected_at_utc": "2026-11-02T03:03:47.018080+00:00",
+  "client_root": "E:\\SeasunGame\\Game\\JX3",
+  "branch": "E:\\SeasunGame\\Game\\JX3\\bin\\zhcn_hd",
+  "interface": "E:\\SeasunGame\\Game\\JX3\\bin\\zhcn_hd\\interface",
+  "interface_exists": true,
+  "version_cfg": {
+    "Sword3.version": "1-6-0-10024",
+    "Sword3.versionex": "hd",
+    "Sword3.RegionCode": "2052",
+    "Sword3.versionName": "剑网3",
+    "Sword3.WGSvrListUrl": "http://jx3comm.xoyocdn.com/jx3hd/zhcn_hd/wegameserverlist/serverlist.ini",
+    "Sword3.VersionCodeName": "pakv4",
+    "Sword3.SvrListUrl": "http://jx3comm.xoyocdn.com/jx3hd/zhcn_hd/serverlist/serverlist.ini",
+    "Sword3.VersionLineFullName": "2052-zhcn",
+    "Sword3.VersionLineName": "zhcn",
+    "Sword3.AddOnVersion": "1.0"
+  },
+  "version_cfg_sha256": "752bc6ea35bfa86e6656138b331c3aa8e81cfca3b90f18b47482b543531fb913",
+  "root_entries": [
+    "GameInfo.dat",
+    "Pakv4",
+    "PreUpdate",
+    "Temp",
+    "bin"
+  ],
+  "branch_directories": [
+    "PakV4Manager",
+    "ScreenShot",
+    "Temp",
+    "bin64",
+    "cache",
+    "config",
+    "data",
+    "interface",
+    "jx3ac",
+    "logs",
+    "minidump",
+    "selfiedata",
+    "sharestationdata",
+    "social",
+    "socialcircledata",
+    "ui",
+    "userdata"
+  ],
+  "interface_directories_before": [
+    "JX#DATA",
+    "MY",
+    "SG#data",
+    "my#data"
+  ],
+  "privacy_scope": "No userdata, screenshots, chat logs, or addon saved data contents read",
+  "installed_manifest_evidence": [
+    {
+      "path": "MY/MY_!Base/info.ini",
+      "fields": [
+        "[MY_!Base]",
+        "package=MY",
+        "default=1",
+        "version=1.0",
+        "lua_0=src.20260904081948-89e73659c.lua"
+      ],
+      "sha256": "acf19e34f42fc6438aa06c642a62d2afd65287eac05be9bdc84f823d1506f853"
+    },
+    {
+      "path": "MY/MY_Target/info.ini",
+      "fields": [
+        "[MY_Target]",
+        "package=MY",
+        "dependence=MY_!Base",
+        "version=1.0",
+        "default=1",
+        "lua_0=src.20260127084231-edb5b68c6.lua"
+      ],
+      "sha256": "c59a5f00138a0ad2b035f01226fca993ddb456807ae866aea594d432ac43735f"
+    }
+  ],
+  "live_client_verified": false,
+  "official_test_permission": "unconfirmed",
+  "client_executable": {
+    "path": "E:\\SeasunGame\\Game\\JX3\\bin\\zhcn_hd\\bin64\\JX3ClientX64.exe",
+    "size": 11834808,
+    "modified_at_utc": "2026-10-29T07:00:37.956036+00:00",
+    "sha256": "c1f4a7970538bc78d12e3cce1ad133c0f2b8b0be2e68ca31c80f3a1a6c9498ce"
+  },
+  "staged_probe": {
+    "path": "E:\\SeasunGame\\Game\\JX3\\bin\\zhcn_hd\\interface\\JX3CP_P0",
+    "default_enabled": false,
+    "files": [
+      {
+        "name": "info.ini",
+        "sha256": "b13ed2110112015921fb3844b3d78fde4dd26de0e3742a19ae608982db81ce66"
+      },
+      {
+        "name": "Main.lua",
+        "sha256": "0873b60194d46f9f88f35d13b4a232b6b685cf89e0efa7d4d5c51e5c24412fd9"
+      }
+    ],
+    "existing_files_overwritten": false
+  }
+}

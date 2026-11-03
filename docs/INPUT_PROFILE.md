@@ -1,5 +1,7 @@
 # Controller input profile - DESIGN, NOT AN IMPORTABLE STEAM INPUT PROFILE
 
+Current execution decision (2026-11-02): retain 16 slots (RT 8 + LT 8). Treat simultaneous LT+RT as no new skill action, while still requiring all already-held keys to release; this behavior must be proven in the chosen input tool, not assumed from the design. Stick deadzones, camera sensitivity and action-layer configuration belong to that tool. A Lua Profile can record the intended mapping but cannot configure Steam Input without a separately verified integration. Device and game-side mapping remain untested. See [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md).
+
 ## Recommended Steam Input model
 Use a **Keyboard + Mouse (legacy mode)** base layout and **Mode Shifting / Action Set Layers** for trigger-held skill actions. Valve documents mode-shift and layer support; test exact editor behavior on the installed Steam version. Non-Steam applications may require launcher/focus testing. Use only where current game policy permits.
 

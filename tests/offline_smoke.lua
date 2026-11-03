@@ -12,10 +12,11 @@ Hotkey = {
 Station = {GetUIScale = function() return 1 end}
 RegisterEvent = function() end
 assert(loadfile("addon/JX3CP_P0/Main.lua"))()
-assert(JX3CP_P0 and JX3CP_P0.VERSION == "0.1.0-probe")
+assert(JX3CP_P0 and JX3CP_P0.VERSION == "0.1.1-probe")
 assert(JX3CP_P0.capabilities["Hotkey.AddBinding"] == true)
 assert(JX3CP_P0.capabilities["GetSkill"] == false)
 assert(debugBinding)
+assert(JX3CP_P0.registration.status == "call_ok_unverified")
 debugBinding.down()
 debugBinding.up()
 assert(JX3CP_P0.events.down == 1 and JX3CP_P0.events.up == 1)
